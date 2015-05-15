@@ -33,7 +33,7 @@
         </div>
     </div>
 
-<?php if (!empty($_POST == ""))  : ?>
+<?php if (!empty($_POST))  : ?>
     <div class="container">
         <div class="row">
             <div class="alert alert-success" role="alert">
@@ -53,6 +53,7 @@
             <?php endif; ?>
         </div>
     </div>
+
 <?php else : ?>
     <div class="container">
         <div class="row">
