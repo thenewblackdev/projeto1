@@ -23,6 +23,8 @@
  * 
  * 
  */
+ini_set('display_errors', true);
+error_reporting(E_ALL);
 ?>
 
 <?php require_once "head.php"; ?>
@@ -36,7 +38,8 @@
     <div class="container">
         <div class="row">
             <?php
-                if(file_exists($_GET["arquivo"])){
+                $arquivo = filter_input(INPUT_GET, 'arquivo');
+                if(file_exists($arquivo)){
                     require_once ($_GET["arquivo"]);
                 }
                 else{
