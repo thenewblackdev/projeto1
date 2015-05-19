@@ -40,7 +40,7 @@
                 Dados enviados com sucesso, abaixo seguem os dados que você enviou:
             </div>
             <?php if(!empty($_POST["nome"])) : ?>
-                <b>Nome:</b> <?php echo $_POST["nome"]; ?> <br/>
+                <b>2:</b> <?php echo $_POST["nome"]; ?> <br/>
             <?php endif; ?>
             <?php if(!empty($_POST["email"])) : ?>
                 <b>Email:</b> <?php echo $_POST["email"]; ?> <br/>
